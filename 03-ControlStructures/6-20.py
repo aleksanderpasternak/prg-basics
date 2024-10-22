@@ -1,6 +1,10 @@
+import math
+
 dec = int(input("Decimal number: "))
 
 while dec > 0:
-    dec = dec / 2
-    remainder = dec % 2
-    print(f"{remainder}")
+    rem = dec % 2
+    dec = math.floor(dec / 2) 
+    print(rem, end="")
+
+
